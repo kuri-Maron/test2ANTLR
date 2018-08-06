@@ -52,7 +52,9 @@ grammar CPP14;
 
 /*Basic concepts*/
 translationunit
+
 :
+//宣言
 	declarationseq? EOF
 ;
 
@@ -2014,6 +2016,7 @@ Universalcharactername
 	| '\\U' Hexquad Hexquad
 ;
 
+//識別子
 Identifier
 :
 /*
